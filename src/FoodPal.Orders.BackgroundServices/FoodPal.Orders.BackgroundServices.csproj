@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FoodPal.Orders.Data\FoodPal.Orders.Data.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.Dtos\FoodPal.Orders.Dtos.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.Mappers\FoodPal.Orders.Mappers.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.MessageBroker.Contracts\FoodPal.Orders.MessageBroker.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

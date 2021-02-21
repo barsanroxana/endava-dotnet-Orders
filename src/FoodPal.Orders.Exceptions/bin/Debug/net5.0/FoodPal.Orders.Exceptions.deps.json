@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FoodPal.Orders.Exceptions/1.0.0": {
+        "dependencies": {
+          "FoodPal.Orders.Dtos": "1.0.0"
+        },
+        "runtime": {
+          "FoodPal.Orders.Exceptions.dll": {}
+        }
+      },
+      "FoodPal.Orders.Dtos/1.0.0": {
+        "dependencies": {
+          "FoodPal.Orders.Enums": "1.0.0"
+        },
+        "runtime": {
+          "FoodPal.Orders.Dtos.dll": {}
+        }
+      },
+      "FoodPal.Orders.Enums/1.0.0": {
+        "runtime": {
+          "FoodPal.Orders.Enums.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FoodPal.Orders.Exceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FoodPal.Orders.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FoodPal.Orders.Enums/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

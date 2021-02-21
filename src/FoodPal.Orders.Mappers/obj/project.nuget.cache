@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "HGytEUPxIq7f9meMNB9jZS/BlaLUApHWSVMA9/Az5026+N9KNB0SZo4i5MXwibBaX6fCTRaWUiKPqZ5txfVflA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Roxana\\Desktop\\Endava\\Bogdan 3-4\\Project Tema Bogdan\\foodpal-orders\\src\\FoodPal.Orders.Mappers\\FoodPal.Orders.Mappers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Roxana\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Roxana\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Roxana\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

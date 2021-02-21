@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FoodPal.Orders.Data.Contracts/1.0.0": {
+        "dependencies": {
+          "FoodPal.Orders.Models": "1.0.0"
+        },
+        "runtime": {
+          "FoodPal.Orders.Data.Contracts.dll": {}
+        }
+      },
+      "FoodPal.Orders.Enums/1.0.0": {
+        "runtime": {
+          "FoodPal.Orders.Enums.dll": {}
+        }
+      },
+      "FoodPal.Orders.Models/1.0.0": {
+        "dependencies": {
+          "FoodPal.Orders.Enums": "1.0.0"
+        },
+        "runtime": {
+          "FoodPal.Orders.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FoodPal.Orders.Data.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FoodPal.Orders.Enums/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FoodPal.Orders.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

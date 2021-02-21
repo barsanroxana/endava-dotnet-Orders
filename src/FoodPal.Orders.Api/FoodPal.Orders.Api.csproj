@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\FoodPal.Orders.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>.\FoodPal.Orders.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.4.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.1" NoWarn="NU1605" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.1" NoWarn="NU1605" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.2.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FoodPal.Orders.Data.Contracts\FoodPal.Orders.Data.Contracts.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.Data\FoodPal.Orders.Data.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.Dtos\FoodPal.Orders.Dtos.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.Mappers\FoodPal.Orders.Mappers.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.MessageBroker.Contracts\FoodPal.Orders.MessageBroker.Contracts.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.MessageBroker.ServiceBus\FoodPal.Orders.MessageBroker.ServiceBus.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.Services.Contracts\FoodPal.Orders.Services.Contracts.csproj" />
+    <ProjectReference Include="..\FoodPal.Orders.Services\FoodPal.Orders.Services.csproj" />
+  </ItemGroup>
+
+</Project>

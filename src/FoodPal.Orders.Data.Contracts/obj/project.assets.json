@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "FoodPal.Orders.Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/FoodPal.Orders.Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FoodPal.Orders.Enums.dll": {}
+        }
+      },
+      "FoodPal.Orders.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FoodPal.Orders.Enums": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FoodPal.Orders.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FoodPal.Orders.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FoodPal.Orders.Enums/1.0.0": {
+      "type": "project",
+      "path": "../FoodPal.Orders.Enums/FoodPal.Orders.Enums.csproj",
+      "msbuildProject": "../FoodPal.Orders.Enums/FoodPal.Orders.Enums.csproj"
+    },
+    "FoodPal.Orders.Models/1.0.0": {
+      "type": "project",
+      "path": "../FoodPal.Orders.Models/FoodPal.Orders.Models.csproj",
+      "msbuildProject": "../FoodPal.Orders.Models/FoodPal.Orders.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "FoodPal.Orders.Models >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Roxana\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Roxana\\Desktop\\Endava\\Bogdan 3-4\\Project Tema Bogdan\\foodpal-orders\\src\\FoodPal.Orders.Data.Contracts\\FoodPal.Orders.Data.Contracts.csproj",
+      "projectName": "FoodPal.Orders.Data.Contracts",
+      "projectPath": "C:\\Users\\Roxana\\Desktop\\Endava\\Bogdan 3-4\\Project Tema Bogdan\\foodpal-orders\\src\\FoodPal.Orders.Data.Contracts\\FoodPal.Orders.Data.Contracts.csproj",
+      "packagesPath": "C:\\Users\\Roxana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Roxana\\Desktop\\Endava\\Bogdan 3-4\\Project Tema Bogdan\\foodpal-orders\\src\\FoodPal.Orders.Data.Contracts\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Roxana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\Roxana\\Desktop\\Endava\\Bogdan 3-4\\Project Tema Bogdan\\foodpal-orders\\src\\FoodPal.Orders.Models\\FoodPal.Orders.Models.csproj": {
+              "projectPath": "C:\\Users\\Roxana\\Desktop\\Endava\\Bogdan 3-4\\Project Tema Bogdan\\foodpal-orders\\src\\FoodPal.Orders.Models\\FoodPal.Orders.Models.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

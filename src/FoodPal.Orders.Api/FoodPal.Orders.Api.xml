@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FoodPal.Orders.Api</name>
+    </assembly>
+    <members>
+        <member name="T:FoodPal.Orders.Api.Controllers.ApiBaseController">
+            <summary>
+            Base controller class for FoodPal Orders API
+            </summary>
+        </member>
+        <member name="T:FoodPal.Orders.Api.Controllers.DeliveryDetailsController">
+            <summary>
+            Providers API methods for handling order item requests.
+            </summary>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.DeliveryDetailsController.#ctor(FoodPal.Orders.Services.Contracts.IDeliveryDetailsService)">
+            <summary>
+            Constructor for Orders controller.
+            </summary>
+        </member>
+        <member name="T:FoodPal.Orders.Api.Controllers.OrderItemsController">
+            <summary>
+            Providers API methods for handling order item requests.
+            </summary>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.OrderItemsController.#ctor(FoodPal.Orders.Services.Contracts.IOrderItemsService)">
+            <summary>
+            Constructor for Orders controller.
+            </summary>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.OrderItemsController.PatchOrderItem(System.Int32,System.Int32,FoodPal.Orders.Dtos.GenericPatchDto)">
+            <summary>
+            
+            </summary>
+            <param name="orderId"></param>
+            <param name="orderItemId"></param>
+            <param name="orderPatchDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FoodPal.Orders.Api.Controllers.OrdersController">
+            <summary>
+            Providers API methods for handling order requests.
+            </summary>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.OrdersController.#ctor(FoodPal.Orders.Services.Contracts.IOrdersService)">
+            <summary>
+            Constructor for Orders controller.
+            </summary>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.OrdersController.GetOrders(System.String,System.Nullable{FoodPal.Orders.Enums.OrderStatus},System.Int32,System.Int32)">
+            <summary>
+            Returns a paged list of orders.
+            </summary>
+            <param name="customerId"></param>
+            <param name="status"></param>
+            <param name="page">Current result page no.</param>
+            <param name="pageSize">No. of returned records per page.</param>
+            <returns>A paginated collection of orders, sorted by last modified date - the most recently updated will be first in the result set.</returns>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.OrdersController.GetOrderById(System.Int32)">
+            <summary>
+            Returns the specified order, if exists.
+            </summary>
+            <param name="orderId">The order identifier.</param>
+            <returns>An object containing the order details.</returns>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.OrdersController.GetOrderStatusById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="orderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.OrdersController.CreateOrder(FoodPal.Orders.Dtos.NewOrderDto)">
+            <summary>
+            Creates an order.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Controllers.OrdersController.PatchOrder(System.Int32,FoodPal.Orders.Dtos.GenericPatchDto)">
+            <summary>
+            
+            </summary>
+            <param name="orderId"></param>
+            <param name="orderPatchDto"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FoodPal.Orders.Api.Filters.ExceptionFilter">
+            <summary>
+            Custom filter used to handle API internal exceptions
+            </summary>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Filters.ExceptionFilter.#ctor(Microsoft.Extensions.Logging.ILogger{FoodPal.Orders.Api.Filters.ExceptionFilter})">
+            <summary>
+            Filter constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Filters.ExceptionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            OnActionExecuted
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Filters.ExceptionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            OnActionExecuting
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Filters.ExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            OnException
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Startup.GetXmlCommentsFilePath">
+            <summary>
+            Docs path
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FoodPal.Orders.Api.Startup.GetDtosXmlCommentsFilePath">
+            <summary>
+            DTOs doc path
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FoodPal.Orders.Api.Versioning.VersioningInfo">
+            <summary>
+            API Versioning utility class.
+            </summary>
+        </member>
+        <member name="P:FoodPal.Orders.Api.Versioning.VersioningInfo.MajorVersion">
+            <summary>
+            Major version.
+            </summary>
+        </member>
+    </members>
+</doc>
